@@ -17,7 +17,7 @@ This simple _bash_ script can be used to easily request a clean Tor circuit. Add
 
 **Prerequisites:**<br>
 Netcat needs to be availlable for this script to run.
-You alse need to have set a Tor connection password<sup>**!**</sup>
+You alse need to have set a Tor connection password<sup>**!**</sup>.
 
 **Usage:**
 - Once you've downloaded the script from this repository one way or another and browsed into the folder, you can run it using<br>```$ sudo ./newcircuit```.
