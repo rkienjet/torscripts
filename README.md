@@ -31,5 +31,7 @@ Netcat needs to be availlable for this script to run.
 ```Tor mode activated. Every command will be torified for this shell.```<br>
 If you want to keep your shell torified even after closing it and/or rebooting, check out my _torifiedshell_ script in this repository.
 - The script will now automatically close.<br>
-<br><sup>**!**</sup>**In case you have _not_ set one yet, you can use my *setpasswd* script from this repository to set a password for your Tor connection**
-<br>**Raw download:**
+
+<br><sup>**!**</sup>**In case you have _not_ set one yet, you can use my *setpasswd* script from this repository to set a password for your Tor connection
+
+**Raw download:**
