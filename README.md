@@ -1,6 +1,6 @@
 # Tor scripts
 A collection of shell and bash scripts to interact with Tor on Linux, written by me (Roy Kienjet).
-If you have a question about the scripts or a request for a script, you can send an email to rkienjet@protonmail.com and I will hapily help you out.
+If you have a question about the scripts or a request for a script, you can send an email to rkienjet@protonmail.com and I will happily help you out.
 
 ## Mandatory prerequisites for all scripts
 - First of all, make sure you've researched how to use Tor safely.
