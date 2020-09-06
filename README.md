@@ -2,12 +2,13 @@
 A collection of shell and bash scripts to interact with Tor on Linux, written by me (Roy Kienjet).
 If you have a question about the scripts or a request for a script, you can send an email to rkienjet@protonmail.com and I will happily help you out.
 
-## Mandatory prerequisites for all scripts
+## Mandatory prerequisites and information for all scripts
 - First of all, make sure you've researched how to use Tor safely.
 - Next, Tor should be installed on your system.
 - For most of the scripts you will probably need to have superuser access. I recommend using `sudo`, because it's much safer then using Tor as root.
 - Apart from these prerequisites, every script will have their own prerequisites listed that need to be present in order to use the script.
-- Every script will have it's raw downlaod command linked here, so that you easily download the script seperately with a one-liner.
+- Every script will have it's raw download command linked here, so that you easily download the script seperately with a one-liner.
+- All scripts must be made executable after downloading them. This can be done with `chmod +x`
 
 ### New Circuit;
 
@@ -35,3 +36,4 @@ If you want to keep your shell torified even after closing it and/or rebooting, 
 <br><sup>**!**</sup>**In case you have _not_ set one yet, you can use my *setpasswd* script from this repository to set a password for your Tor connection**
 
 **Raw download:**
+```wget https://raw.githubusercontent.com/rkienjet/torscripts/master/newcircuit```
