@@ -67,3 +67,4 @@ A really simple oneliner, but a usefull one. It adds one line to the .bashrc. Th
 - Once you've downloaded the script from this repository one way or another and browsed into the folder, you can simpky run it using<br>```$ sudo ./alwaystor```.
 
 **Raw download:**<br>
+```wget https://raw.githubusercontent.com/rkienjet/torscripts/master/alwaystor```
