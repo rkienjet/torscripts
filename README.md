@@ -16,8 +16,9 @@ This simple _bash_ script can be used to easily request a clean circuit. Additio
   4. The signal to close the connection to the Tor port
 - The new socket ip will be retirieved and shown onto the screen. 
 - Next, Enter _y_ if you want to torify your shell, so that all your shell commands will be routed through the Tor circuit, or _n_, if you don't want to do that.
-- If you chose _y_ and everything went well, you will now see the following text:
+- If you chose _y_ and everything went well, you will now see the following text:<br>
 ```Tor mode activated. Every command will be torified for this shell.```
+<br>- If you want to keep the torified shell even after closing it, check out my _torifiedshell_ script in this repository.
 
   
 <br>**! In case you have _NOT_ set one yet, you can use my *torpasswd* script from this repository to set a password for your Tor connection !**
