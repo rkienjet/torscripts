@@ -54,3 +54,4 @@ This _shell_ script sets the Tor connection authentication password to whatever 
 ```$ tail -2 /etc/tor/torrc```
 
 **Raw download:**<br>
+```wget https://raw.githubusercontent.com/rkienjet/torscripts/master/setpasswd```
