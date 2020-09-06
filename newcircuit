@@ -1,0 +1,20 @@
+#!/bin/bash
+read -p "Enter your Tor Authentication password: " -r passwd
+read -p "Do you want to clear the Tor DNS Cache? (y/n) " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    printf 'AUTHENTICATE "%s"\r\nSIGNAL NEWNYM\r\nSIGNAL CLEARDNSCACHE\r\nQUIT\r\n' "$passwd" | nc 127.0.0.1 9051
+else
+    printf 'AUTHENTICATE "%s"\r\nSIGNAL NEWNYM\r\nQUIT\r\n' "$passwd" | nc 127.0.0.1 9051
+fi
+echo "torsocks ip: "
+torsocks wget -qO - https://api.ipify.org; echo
+read -p "Do you want to route all commands through the new Tor circuit? (y/n)  " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    source torsocks on
+else
+    source torsocks off
+fi
