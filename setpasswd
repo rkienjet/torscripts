@@ -1,0 +1,6 @@
+#!/bin/sh
+read -p "Enter the desired password for your Tor connection: " -r passwd
+torpass=$(tor --hash-password "$passwd")
+printf "HashedControlPassword $torpass\nControlPort 9051\n" | sudo tee -a /etc/tor/torrc
+echo "Restarting Tor..."
+sudo systemctl restart tor
