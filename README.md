@@ -10,14 +10,14 @@ If you have a question about the scripts or a request for a script, you can send
 - Every script will have it's raw download command linked here, so that you easily download the script seperately with a one-liner.
 - All scripts must be made executable after downloading them. This can be done with `$ chmod +x`
 
-### New Circuit;
+### New Circuit (newcircuit);
 
 **Purpose:**<br>
-This simple _bash_ script can be used to easily request a clean Tor circuit. Additionally, you can choose to clear the DNS Cache and/or route all your commands through the new circuit. Your new torsocks ip will be shown after the new circuit request is fullfilled.
+This _bash_ script can be used to easily request a clean Tor circuit. Additionally, you can choose to clear the DNS Cache and/or route all your commands through the new circuit. Your new torsocks ip will be shown after the new circuit request is fullfilled.
 
-**Prerequisites:**<br>
-Netcat needs to be availlable for this script to run.
-You alse need to have set a Tor connection password<sup>**!**</sup>.
+**Prerequisites:**
+- Netcat needs to be availlable for this script to run.
+- You alse need to have set a Tor connection password<sup>**!**</sup>.
 
 **Usage:**
 - Once you've downloaded the script from this repository one way or another and browsed into the folder, you can run it using<br>```$ sudo ./newcircuit```.
@@ -36,5 +36,21 @@ If you want to keep your shell torified even after closing it and/or rebooting, 
 
 <br><sup>**!**</sup>**In case you have _not_ set one yet, you can use my *setpasswd* script from this repository to set a password for your Tor connection**
 
-**Raw download:**
+**Raw download:**<br>
 ```$ wget https://raw.githubusercontent.com/rkienjet/torscripts/master/newcircuit```
+
+### Set Password (setpasswd);
+
+**Purpose:**<br>
+This _shell_ script sets the Tor connection authentication password to whatever the user wants it to be.
+
+**Prerequisites:**
+- A strong password. I highly recommend using a password manager like [KeePass](https://keepass.info/) or [1Password](https://1password.com/).
+
+**Usage:**
+- Once you've downloaded the script from this repository one way or another and browsed into the folder, you can run it using<br>```$ sudo ./setpasswd```.
+- You will be asked to enter your new Tor password.
+- When you've done so and if everything went as it's supposed to, you will see your the HashedControlPassword and on the other line the ControlPort 9051. These two lines are  supposed to be present in the /etc/tor/torrc configuration file. You can check this by using the following command:
+```$ tail -2 /etc/tor/torrc```
+
+**Raw download:**<br>
