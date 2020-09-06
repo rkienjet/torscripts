@@ -8,7 +8,7 @@ If you have a question about the scripts or a request for a script, you can send
 - For most of the scripts you will probably need to have superuser access. I recommend using `sudo`, because it's much safer then using Tor as root.
 - Apart from these prerequisites, every script will have their own prerequisites listed that need to be present in order to use the script.
 - Every script will have it's raw download command linked here, so that you easily download the script seperately with a one-liner.
-- All scripts must be made executable after downloading them. This can be done with `chmod +x`
+- All scripts must be made executable after downloading them. This can be done with `$ chmod +x`
 
 ### New Circuit;
 
@@ -19,7 +19,7 @@ This simple _bash_ script can be used to easily request a clean Tor circuit. Add
 Netcat needs to be availlable for this script to run.
 
 **Usage:**
-- Once you've downloaded the script from this repository one way or another and browsed into the folder, you can run it using<br>```sudo ./newcircuit```.
+- Once you've downloaded the script from this repository one way or another and browsed into the folder, you can run it using<br>```$ sudo ./newcircuit```.
 - The script will ask you to enter your Tor authentication password<sup>**!**</sup>. Enter it and press enter to continue.
 - The following things will be sent respectively to port 9051 of 127.0.0.1 (localhost), where Tor is listening: 
   1. The Tor authentication password you entered after running the script.
@@ -36,4 +36,4 @@ If you want to keep your shell torified even after closing it and/or rebooting, 
 <br><sup>**!**</sup>**In case you have _not_ set one yet, you can use my *setpasswd* script from this repository to set a password for your Tor connection**
 
 **Raw download:**
-```wget https://raw.githubusercontent.com/rkienjet/torscripts/master/newcircuit```
+```$ wget https://raw.githubusercontent.com/rkienjet/torscripts/master/newcircuit```
