@@ -8,7 +8,7 @@ If you have a question about the scripts or a request for a script, you can send
 - For most of the scripts you will probably need to have superuser access. I recommend using `sudo`, because it's much safer then using Tor as root.
 - Apart from these prerequisites, every script will have their own prerequisites listed that need to be present in order to use the script.
 - Every script will have it's raw download command linked here, so that you easily download the script seperately with a one-liner.
-- All scripts must be made executable after downloading them. This can be done with `$ chmod +x`
+- All scripts must be made executable after downloading them. This can be done with `$ sudo chmod +x`
 
 ### New Circuit (newcircuit);
 
